@@ -1,1 +1,128 @@
+1. Introduction
+The Basic Subscription Manager is a Python-based command-line application designed to help users track their monthly subscriptions and calculate total spending. It provides a simple yet effective way to manage recurring expenses, demonstrating core programming concepts such as list manipulation, loops, input validation, and error handling. This project was developed as part of coursework at VIT Bhopal.
 
+2. Objectives
+To create a user-friendly tool for managing subscription costs.
+
+To apply fundamental Python programming concepts in a practical project.
+
+To ensure robust error handling and input validation.
+
+To provide clear, formatted output for better user experience.
+
+3. Features
+Interactive Subscription Entry: Users can add multiple subscriptions with custom names and costs.
+
+Input Validation: Ensures only valid numeric values are accepted.
+
+Negative Value Protection: Prevents entry of negative costs.
+
+Dynamic List Management: Subscriptions stored in lists for easy manipulation.
+
+Real-time Feedback: Confirmation messages after each entry.
+
+Automatic Cost Calculation: Computes total monthly expenditure.
+
+Formatted Output: Displays subscriptions and costs in a clean format.
+
+Exit Control: Users can type done to finish input.
+
+4. Technologies Used
+Programming Language: Python 3.x
+
+Core Concepts:
+
+Lists and nested lists
+
+While loops
+
+Try-except blocks
+
+String methods (.strip(), .lower())
+
+Input validation and type casting
+
+Formatted string output (f-strings)
+
+5. Installation & Execution
+Prerequisites
+Python 3.6 or higher
+
+Command-line terminal or IDE (VS Code, PyCharm, IDLE)
+
+Steps
+Verify Python installation:
+
+bash
+python --version
+Download subscription_manager.py.
+
+Navigate to project directory:
+
+bash
+cd path/to/project
+Run the program:
+
+bash
+python subscription_manager.py
+6. Testing & Validation
+Test Cases
+Normal Entry: Adding Netflix ($9.99) and Spotify ($4.99) → Total $14.98.
+
+Invalid Input: Entering non-numeric cost prompts error.
+
+Negative Cost: Prevents entry of negative values.
+
+Empty List: Displays “No subscriptions were entered.”
+
+Multiple Subscriptions: Handles decimal values and large numbers.
+
+Edge Cases: Accepts cost 0, large values, and names with spaces/special characters.
+
+7. Example Session
+Code
+ Welcome to your Basic Subscription Manager (List Version)! 
+Enter 'done' for the subscription name when finished adding.
+---------------------------------------------
+Enter subscription name (or 'done'): Netflix
+Enter cost for 'Netflix': 9.99
+Added: Netflix ($9.99)
+
+Enter subscription name (or 'done'): Spotify
+Enter cost for 'Spotify': 4.99
+Added: Spotify ($4.99)
+
+Enter subscription name (or 'done'): done
+
+=============================================
+ Your Subscriptions:
+- Netflix: $9.99
+- Spotify: $4.99
+---------------------------------------------
+ Total Monthly Cost: $14.98
+=============================================
+8. Project Structure
+Code
+subscription-manager/
+│
+├── subscription_manager.py    # Main program file
+├── README.md                  # Documentation
+└── statement.md               # Project statement
+9. Future Enhancements
+Save subscriptions to a file for persistence.
+
+Edit or delete existing subscriptions.
+
+Monthly/yearly breakdown.
+
+Category-based organization.
+
+Export data to CSV.
+
+Track renewal dates.
+
+10. Conclusion
+The Basic Subscription Manager successfully demonstrates fundamental Python programming concepts while providing a practical tool for managing monthly expenses. Its simplicity makes it accessible to beginners, while its extensibility offers opportunities for future development. This project highlights the importance of input validation, error handling, and user-friendly design in software development.
+
+11. Author
+VIT Bhopal Student Project
